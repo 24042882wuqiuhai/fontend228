@@ -1,0 +1,100 @@
+/* ===== 页面整体居中 ===== */
+h1 {
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+/* ===== 外层容器玻璃效果 ===== */
+div[style] {
+  width: 40% !important;
+  margin: 60px auto !important;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.15);
+
+  padding: 40px;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 0 30px rgba(255,255,255,0.05);
+
+  transition: 0.4s ease;
+}
+
+/* ===== label 样式 ===== */
+label {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* ===== 输入框玻璃风 ===== */
+.form-control {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255,255,255,0.2) !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  padding: 12px 15px;
+  transition: 0.3s ease;
+}
+
+/* placeholder 颜色 */
+.form-control::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+/* 聚焦效果 */
+.form-control:focus {
+  border: 1px solid #00f5ff !important;
+  box-shadow: 0 0 15px rgba(0,245,255,0.6) !important;
+  background: rgba(255,255,255,0.15) !important;
+}
+
+/* ===== 错误提示 ===== */
+div[ng-reflect-ng-if] {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+/* ===== 按钮发光效果 ===== */
+.btn-primary {
+  background: linear-gradient(135deg, #00f5ff, #0084ff) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 132, 255, 0.6);
+}
+
+.btn-primary:disabled {
+  background: rgba(255,255,255,0.2) !important;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* ===== 响应式优化 ===== */
+@media (max-width: 992px) {
+  div[style] {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  div[style] {
+    width: 95% !important;
+    padding: 25px;
+  }
+}
