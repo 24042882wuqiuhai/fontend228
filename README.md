@@ -1,27 +1,102 @@
-# Shop
+# 🛍️ Shop — Angular E-Commerce Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+<p align="center">
+  <img src="https://img.shields.io/badge/Angular-7.1.4-red?style=for-the-badge&logo=angular" />
+  <img src="https://img.shields.io/badge/Dockerized-Yes-blue?style=for-the-badge&logo=docker" />
+  <img src="https://img.shields.io/badge/CI/CD-AWS-success?style=for-the-badge&logo=amazon-aws" />
+</p>
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<p align="center">
+  <img src="https://media.giphy.com/media/QBd2kLB5qDmysEXre9/giphy.gif" width="600"/>
+</p>
 
-## Code scaffolding
+> 🚀 A modern Angular shop demo deployed via Docker + AWS ECS.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## ✨ Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* 🛒 Product Listing
+* 🔍 Search Functionality
+* 🧾 Shopping Cart
+* ⚡ SPA Routing
+* 🐳 Docker Deployment
+* ☁ AWS ECS + ECR Ready
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🖥️ Development
 
-## Running end-to-end tests
+```bash
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Open:
 
-## Further help
+```
+http://localhost:4200
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+---
+
+## 🏗 Build
+
+```bash
+ng build --prod
+```
+
+Build output:
+
+```
+dist/
+```
+
+---
+
+## 🐳 Docker
+
+```bash
+docker build -t shop-app .
+docker run -p 8080:80 shop-app
+```
+
+Open:
+
+```
+http://localhost:8080
+```
+
+---
+
+## ☁ Deployment Architecture
+
+```
+Angular → Docker → ECR → ECS → ALB
+```
+
+---
+
+## 📦 Tech Stack
+
+* Angular 7
+* Nginx
+* Docker
+* AWS ECS
+* CodePipeline
+
+---
+
+## 🔥 Future Improvements
+
+* Add authentication
+* Integrate payment system
+* Upgrade Angular version
+* Add CI pipeline badge
+
+---
+
+<p align="center">
+  Built with ❤️ using Angular
+</p>
