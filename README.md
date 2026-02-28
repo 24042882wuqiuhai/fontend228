@@ -1,6 +1,4 @@
-<p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=35&pause=1000&color=FF5733&center=true&vCenter=true&width=800&lines=🛍️+Shop+Application;Angular+%7C+Docker+%7C+AWS;Full+CI%2FCD+Pipeline+Ready" />
-</p>
+# 🛍️ Shop — Angular E-Commerce Demo
 
 <p align="center">
   <img src="https://img.shields.io/badge/Angular-7.1.4-red?style=for-the-badge&logo=angular" />
