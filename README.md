@@ -9,7 +9,7 @@
 ---
 
 <p align="center">
-  <img src="https://media.giphy.com/media/QBd2kLB5qDmysEXre9/giphy.gif" width="600"/>
+  <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="600"/>
 </p>
 
 > 🚀 A modern Angular shop demo deployed via Docker + AWS ECS.
